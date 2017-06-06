@@ -1,0 +1,47 @@
+{
+    "fluentMethods": true,
+    "relationships": [        
+        {
+            "relationshipName": "prodSegd",
+            "otherEntityName": "prodSegd",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "prod"
+        }
+
+    ],
+    "fields": [
+        {
+            "fieldName": "cntdDomiId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "dsProdSubpVc",
+            "fieldType": "String",
+            "fieldValidateRules": [                
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "60"
+        },
+        {
+            "fieldName": "dsProdCorp",
+            "fieldType": "String",
+            "fieldValidateRules": [                
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "40"
+        },
+        {
+            "fieldName": "cdProcSusep",
+            "fieldType": "String",
+            "fieldValidateRules": [                
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "22"
+        }
+    ],
+    "changelogDate": "20170416180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "TB_PROD",
+    "pagination": "pager"
+}

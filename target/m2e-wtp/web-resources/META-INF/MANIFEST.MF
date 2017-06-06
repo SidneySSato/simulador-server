@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Simulador Server
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Sidney
+Implementation-Vendor-Id: br.com.jumplabel.simulador
+Build-Jdk: 1.8.0_92
+Implementation-URL: http://projects.spring.io/spring-boot/simulador-se
+ rver/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

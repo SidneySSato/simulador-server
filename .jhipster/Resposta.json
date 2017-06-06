@@ -1,0 +1,57 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "pergunta",
+            "otherEntityName": "pergunta",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "dsPergunta"
+        },        
+        {
+            "relationshipName": "respCorporativa",
+            "otherEntityName": "respCorporativa",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "resposta"
+        },
+        {
+            "relationshipName": "rangeResposta",
+            "otherEntityName": "rangeResposta",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "resposta"
+        },
+        {
+            "relationshipName": "respostaServico",
+            "otherEntityName": "respostaServico",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "resposta"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "dsResposta",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "80"
+        },
+        {
+            "fieldName": "dsCategoria",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "80"
+        },        
+        {
+            "fieldName": "inUtilizacao",
+            "fieldType": "String"
+        }
+
+    ],
+    "changelogDate": "20161228180237",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "tb_resposta",
+    "pagination": "pager"
+}

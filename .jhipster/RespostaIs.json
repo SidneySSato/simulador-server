@@ -1,0 +1,40 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "resposta",
+            "otherEntityName": "resposta",
+            "relationshipType": "one-to-one",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "respostaIs"
+        },
+        {
+            "relationshipName": "pergunta1",
+            "otherEntityName": "pergunta",
+            "relationshipType": "one-to-one",
+            "ownerSide": true            
+        },
+        {
+            "relationshipName": "pergunta2",
+            "otherEntityName": "pergunta",
+            "relationshipType": "one-to-one",
+            "ownerSide": true            
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "cdTipoIs",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "4"
+
+        }
+    ],
+    "changelogDate": "20170420180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "TB_RESPOSTA_IS",
+    "pagination": "pager"
+}

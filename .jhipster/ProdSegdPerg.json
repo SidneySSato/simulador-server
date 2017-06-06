@@ -1,0 +1,26 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "prodSegd",
+            "otherEntityName": "prodSegd",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "dtInicVigeProdSegd"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "dtInicVigePerg",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dtFimVigePerg",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20170416180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "TB_PROD_SEGD_PERG",
+    "pagination": "pager"
+}

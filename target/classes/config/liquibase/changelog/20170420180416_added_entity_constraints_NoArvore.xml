@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <!--
+        Added the constraints for entity NoArvore.
+    -->
+    <changeSet id="20170420180416-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="produto_arvore_id"
+                                 baseTableName="TB_NO_ARVORE"
+                                 constraintName="fk_no_arvore_produto_arvore_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="TB_PRODUTO_ARVORE"/>
+
+        <addForeignKeyConstraint baseColumnNames="arvore_decisao_id"
+                                 baseTableName="TB_NO_ARVORE"
+                                 constraintName="fk_no_arvore_arvore_decisao_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="TB_ARVORE_DECISAO"/>
+
+        <addForeignKeyConstraint baseColumnNames="prod_segd_plan_segm_id"
+                                 baseTableName="TB_NO_ARVORE"
+                                 constraintName="fk_no_arvore_prod_segd_plan_segm_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="TB_PROD_SEGD_PLAN_SEGM"/>
+
+        <addForeignKeyConstraint baseColumnNames="resposta_id"
+                                 baseTableName="TB_NO_ARVORE"
+                                 constraintName="fk_no_arvore_resposta_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tb_resposta"/>
+
+        <addForeignKeyConstraint baseColumnNames="no_arvore_copia_id"
+                                 baseTableName="TB_NO_ARVORE"
+                                 constraintName="fk_no_arvore_no_arvore_copia_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="TB_NO_ARVORE_COPIA"/>
+
+    </changeSet>
+</databaseChangeLog>

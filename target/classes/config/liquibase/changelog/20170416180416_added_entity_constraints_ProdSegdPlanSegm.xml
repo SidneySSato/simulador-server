@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <!--
+        Added the constraints for entity ProdSegdPlanSegm.
+    -->
+    <changeSet id="20170416180416-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="CD_PROD, CD_SUBP, CD_SEGD_DOMI, CD_PLAN_DOMI"
+                                 baseTableName="TB_PROD_SEGD_PLAN_SEGM"
+                                 constraintName="FK_PROD_SEGD_PLAN_SEGM_01"
+                                 referencedColumnNames="CD_PROD, CD_SUBP, CD_SEGD_DOMI, CD_PLAN_DOMI"
+                                 referencedTableName="TB_PROD_SEGD_PLAN"/>
+
+    </changeSet>
+</databaseChangeLog>

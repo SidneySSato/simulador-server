@@ -1,0 +1,50 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "perguntaTag",
+            "otherEntityName": "perguntaTag",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "pergunta"
+        },
+        {
+            "relationshipName": "resposta",
+            "otherEntityName": "resposta",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "pergunta"
+        },
+        {
+            "relationshipName": "servico",
+            "otherEntityName": "servico",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "dsServico"
+        },
+        {
+            "relationshipName": "tipoResposta",
+            "otherEntityName": "tipoResposta",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "dsTipoResposta"
+        }
+
+    ],
+    "fields": [
+        {
+            "fieldName": "dsPergunta",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "80"
+        },        
+        {
+            "fieldName": "inEditavel",
+            "fieldType": "Boolean"
+        }        
+    ],
+    "changelogDate": "20161228175642",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "tb_pergunta",
+    "pagination": "pager"
+}

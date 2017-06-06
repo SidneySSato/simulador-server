@@ -1,0 +1,48 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+    	{
+            "relationshipName": "arvoreFamilia",
+            "otherEntityName": "arvoreFamilia",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "arvoreDecisao"
+        },
+        {
+            "relationshipName": "arvoreCanal",
+            "otherEntityName": "arvoreCanal",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "arvoreDecisao"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "dsArvoreDecisao",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "80"
+        },
+        {
+            "fieldName": "qtProdutos",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "qtPlanos",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "cdSituArvore",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "4"
+        }
+    ],
+    "changelogDate": "20170412180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "TB_ARVORE_DECISAO",
+    "pagination": "pager"
+}

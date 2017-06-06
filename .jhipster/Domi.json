@@ -1,0 +1,26 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+    	{
+            "relationshipName": "cntdDomi",
+            "otherEntityName": "cntdDomi",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "domi"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "nmDomi",
+            "fieldType": "String",
+            "fieldValidateRules": [                
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "100"
+        }
+    ],
+    "changelogDate": "20161228180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "TB_DOMI",
+    "pagination": "pager"
+}

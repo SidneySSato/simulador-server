@@ -1,0 +1,47 @@
+{
+    "fluentMethods": true,
+    "relationships": [        
+        {
+            "relationshipName": "noArvore",
+            "otherEntityName": "noArvore",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "produtoArvore"
+        },
+        {
+            "relationshipName": "perguntaObg",
+            "otherEntityName": "perguntaObg",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "produtoArvore"
+        },
+        {
+            "relationshipName": "prod",
+            "otherEntityName": "prod",
+            "relationshipType": "one-to-one",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "produtoArvore"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "inProdutoSemOferta",
+            "fieldType": "String",
+            "fieldValidateRules": [                
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "1"
+        },
+        {
+            "fieldName": "cdSituProdArvore",
+            "fieldType": "String",
+            "fieldValidateRules": [                
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "4"
+        }
+    ],
+    "changelogDate": "20170420180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "TB_PRODUTO_ARVORE",
+    "pagination": "pager"
+}

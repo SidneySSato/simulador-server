@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <!--
+        Added the constraints for entity CntdDomi.
+    -->
+    <changeSet id="20161228180416-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="CD_CNTD_DOMI_SEGD"
+                                 baseTableName="TB_COMP_DOMI_SEGD"
+                                 constraintName="FK_COMP_DOMI_SEGD_01"
+                                 referencedColumnNames="CD_CNTD_DOMI"
+                                 referencedTableName="TB_CNTD_DOMI"/>
+    </changeSet>
+</databaseChangeLog>

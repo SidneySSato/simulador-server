@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "noArvore",
+            "otherEntityName": "noArvore",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "mensagemProduto",
+            "otherEntityName": "mensagemProduto",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "dsMensagem"
+        }        
+    ],
+    "fields": [],
+    "changelogDate": "20170420180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "TB_NO_ARVORE_MENSAGEM_PRODUTO",
+    "pagination": "pager"
+}

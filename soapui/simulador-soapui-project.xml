@@ -1,0 +1,2080 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="882aaf4d-aeca-444a-bb3f-5b0f1f32f410" activeEnvironment="Default" name="simulador" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config">
+	<con:settings/>
+	<con:interface xsi:type="con:RestService" id="dc7bee0e-b171-4c8d-9d25-d5e57fb98538" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8080" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<con:settings/>
+		<con:definitionCache type="TEXT" rootPart=""/>
+		<con:endpoints>
+			<con:endpoint>http://localhost:8080</con:endpoint>
+		</con:endpoints>
+		<con:resource name="tags-DELETE-GET" path="/api/tags/1" id="6dfe1392-5535-4440-859b-21a441384a01">
+			<con:settings/>
+			<con:parameters/>
+			<con:method name="apagaId" id="766f3fda-b537-4121-8c28-25854a02354d" method="DELETE">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="FAULT">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>405</con:status>
+					<con:params/>
+					<con:element xmlns:ns="http://localhost/api/tags/3">ns:Fault</con:element>
+				</con:representation>
+				<con:representation type="REQUEST">
+					<con:mediaType>application/json</con:mediaType>
+					<con:params/>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200</con:status>
+					<con:params/>
+					<con:element xmlns:ns="http://localhost/api/tags/3">ns:Response</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:request name="Request 1" id="55590856-8606-4bf2-bfd9-f6d6e3269542" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request/>
+					<con:originalUri>http://localhost/api/tags/3</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:request>
+			</con:method>
+			<con:method name="GETByID" id="4a76c7b0-db5e-4d6e-8915-bfb940911d4a" method="GET">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200</con:status>
+					<con:params/>
+					<con:element xmlns:ns="http://localhost/api/tags/1">ns:Response</con:element>
+				</con:representation>
+				<con:request name="Request 1" id="20f786ba-ab72-4805-a3f0-50aa4de1711a" mediaType="application/json">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request/>
+					<con:originalUri>http://localhost/api/tags/1</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:request>
+			</con:method>
+		</con:resource>
+	<con:resource name="tags" path="/api/tags" id="7127601a-2f2f-49d0-b0ae-c69740770b34">
+			<con:settings/>
+			<con:parameters/>
+			<con:method name="POST" id="a2a96199-011a-4463-8f69-78a3b822afea" method="POST">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200 201</con:status>
+					<con:params/>
+					<con:element xmlns:tags="http://localhost/api/tags">tags:Response</con:element>
+				</con:representation>
+				<con:representation type="REQUEST">
+					<con:mediaType>application/json</con:mediaType>
+					<con:params/>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>500 400</con:status>
+					<con:params/>
+					<con:element xmlns:tags="http://localhost/api/tags">tags:Fault</con:element>
+				</con:representation>
+				<con:request name="TagTeste100" id="188ffad6-4623-4226-9308-ef9418e704c7" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{
+						"dsTag" : "DS1"
+						}
+					</con:request>
+					<con:originalUri>http://localhost/api/tags</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+					<con:parameterOrder/>
+				</con:request>
+				<con:request name="TagTeste200" id="188ffad6-4623-4226-9308-ef9418e704c7" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{
+						"dsTag" : "Teste200"
+						}
+					</con:request>
+					<con:originalUri>http://localhost/api/tags</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+					<con:parameterOrder/>
+				</con:request>
+			</con:method>
+			<con:method name="PUT" id="a2a96199-011a-4463-8f69-78a3b822afea" method="PUT">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200 201</con:status>
+					<con:params/>
+					<con:element xmlns:tags="http://localhost/api/tags">tags:Response</con:element>
+				</con:representation>
+				<con:representation type="REQUEST">
+					<con:mediaType>application/json</con:mediaType>
+					<con:params/>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>500 405</con:status>
+					<con:params/>
+					<con:element xmlns:tags="http://localhost/api/tags">tags:Fault</con:element>
+				</con:representation>
+				<con:request name="AtualizaTag1" id="188ffad6-4623-4226-9308-ef9418e704c7" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{ "id" : 1,
+						"dsTag" : "Teste27"
+						}
+					</con:request>
+					<con:originalUri>http://localhost/api/tags</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+					<con:parameterOrder/>
+				</con:request>
+			</con:method>
+			<con:method name="GETALL" id="3be53c42-ed7c-427f-8c8e-c412f5e8f2ae" method="GET">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200</con:status>
+					<con:params/>
+					<con:element xmlns:tags="http://localhost/api/tags">tags:Response</con:element>
+				</con:representation>
+				<con:request name="Request 1" id="898601ad-70f5-4ac7-b4c6-508cc2414ef0" mediaType="application/json">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request/>
+					<con:originalUri>http://localhost/api/tags</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:request>
+			</con:method>
+		</con:resource>		
+		<con:resource name="perguntas" path="/api/perguntas" id="18fdab12-0077-46af-932d-aa36b809819f">
+			<con:settings/>
+			<con:parameters/>
+			<con:method name="POST" id="5b951e96-5257-465d-a8a9-710cfc4a51ce" method="POST">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="FAULT">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>404 500 409 405 400</con:status>
+					<con:params/>
+					<con:element xmlns:per="http://localhost/perguntas/">per:Fault</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200 201</con:status>
+					<con:params/>
+					<con:element xmlns:per="http://localhost/perguntas/">per:Response</con:element>
+				</con:representation>
+				<con:representation type="REQUEST">
+					<con:mediaType>application/json</con:mediaType>
+					<con:params/>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>400</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="InvalidoSemDescricao" id="e73f22e7-e652-4ae8-880b-692a0e6210cc" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{
+						"dsPergunta" : ""
+						}
+					</con:request>
+					<con:originalUri>http://localhost/perguntas/</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+					<con:parameterOrder/>
+				</con:request>
+				<con:request name="validoComTagsDadosCorp" id="e73f22e7-e652-4ae8-880b-692a0e6210cc" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:encoding/>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{
+	"dsPergunta" : "Qual Segmento",
+	"tags" : [ {"id":1}, {"id":2} ]
+						}
+					</con:request>
+					<con:originalUri>http://localhost/perguntas/</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+					<con:parameterOrder/>
+				</con:request>
+				<con:request name="validoComTagsRespostaLista" id="e73f22e7-e652-4ae8-880b-692a0e6210cc" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:encoding/>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{
+						"dsPergunta" : "Possui Casa de Veraneio",
+						"tags" : [ {"id":1}]
+						}
+					</con:request>
+					<con:originalUri>http://localhost/perguntas/</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+					<con:parameterOrder/>
+				</con:request>
+				<con:request name="validoComTagsRespostaInputAlphaNumericoEspecifico" id="e73f22e7-e652-4ae8-880b-692a0e6210cc" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:encoding/>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{
+						"dsPergunta" : "Resposta Input Especifico",
+						"tags" : [ {"id":1}]
+						}
+					</con:request>
+					<con:originalUri>http://localhost/perguntas/</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+					<con:parameterOrder/>
+				</con:request>
+				<con:request name="validoComTagsRespostaInputAlphaNumericoTodos" id="e73f22e7-e652-4ae8-880b-692a0e6210cc" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:encoding/>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{
+						"dsPergunta" : "Pergunta alphanumerico todos 2",
+						"tags" : [ {"id":1}]
+						}
+					</con:request>
+					<con:originalUri>http://localhost/perguntas/</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+					<con:parameterOrder/>
+				</con:request>
+			<con:request name="validoComTagsRespostaInputNumerico" id="e73f22e7-e652-4ae8-880b-692a0e6210cc" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:encoding/>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{
+						"dsPergunta" : "Pergunta Range idade",
+						"tags" : [ {"id":1}]
+						}
+					</con:request>
+					<con:originalUri>http://localhost/perguntas/</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+					<con:parameterOrder/>
+				</con:request></con:method>
+			<con:method name="PUT" id="5b951e96-5257-465d-a8a9-710cfc4a51ce" method="PUT">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="FAULT">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>404 500 409 405</con:status>
+					<con:params/>
+					<con:element xmlns:per="http://localhost/perguntas/">per:Fault</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200 201</con:status>
+					<con:params/>
+					<con:element xmlns:per="http://localhost/perguntas/">per:Response</con:element>
+				</con:representation>
+				<con:representation type="REQUEST">
+					<con:mediaType>application/json</con:mediaType>
+					<con:params/>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>400</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:request name="Valido" id="e73f22e7-e652-4ae8-880b-692a0e6210cc" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{ "id": 6,
+						"dsPergunta" : "Qual carro 8?",
+						"servicoId" : 1,
+						"tipoRespostaId": 2
+						}
+					</con:request>
+					<con:originalUri>http://localhost/perguntas/</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+					<con:parameterOrder/>
+				</con:request>
+				<con:request name="RetiraTipoResposta" id="e73f22e7-e652-4ae8-880b-692a0e6210cc" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{ "id": 1,
+						"dsPergunta" : "Qual carro 8?",
+						"servicoId" : 1
+						}
+					</con:request>
+					<con:originalUri>http://localhost/perguntas/</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+					<con:parameterOrder/>
+				</con:request>
+			</con:method>
+			<con:method name="GETALL" id="5b951e96-5257-465d-a8a9-710cfc4a51ce" method="GET">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="FAULT">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>404 500 409</con:status>
+					<con:params/>
+					<con:element xmlns:per="http://localhost/perguntas/">per:Fault</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200 201</con:status>
+					<con:params/>
+					<con:element xmlns:per="http://localhost/perguntas/">per:Response</con:element>
+				</con:representation>
+				<con:representation type="REQUEST">
+					<con:mediaType>application/json</con:mediaType>
+					<con:params/>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>400</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:request name="Request 1" id="e73f22e7-e652-4ae8-880b-692a0e6210cc" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{
+						"dsPergunta" : "Tem carro?",
+						"tags" : [ {"id":1} ],
+						"respostas" : [ { "dsResposta": "não"}]
+						}
+					</con:request>
+					<con:originalUri>http://localhost/perguntas/</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+					<con:parameterOrder/>
+				</con:request>
+			</con:method>
+		</con:resource>
+	
+		<con:resource name="perguntas-DELETE-GET" path="/api/perguntas/7" id="18fdab12-0077-46af-932d-aa36b809819f">
+			<con:settings/>
+			<con:parameters/>
+			<con:method name="GETBYID" id="5b951e96-5257-465d-a8a9-710cfc4a51ce" method="GET">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="FAULT">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>404 500 409</con:status>
+					<con:params/>
+					<con:element xmlns:per="http://localhost/perguntas/">per:Fault</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200 201</con:status>
+					<con:params/>
+					<con:element xmlns:per="http://localhost/perguntas/">per:Response</con:element>
+				</con:representation>
+				<con:representation type="REQUEST">
+					<con:mediaType>application/json</con:mediaType>
+					<con:params/>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>400</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>404</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:request name="Request 1" id="e73f22e7-e652-4ae8-880b-692a0e6210cc" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{
+						"dsPergunta" : "Tem carro?",
+						"tags" : [ {"id":1} ],
+						"respostas" : [ { "dsResposta": "não"}]
+						}
+					</con:request>
+					<con:originalUri>http://localhost/perguntas/</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+					<con:parameterOrder/>
+				</con:request>
+			</con:method>
+			<con:method name="DELETE" id="5b951e96-5257-465d-a8a9-710cfc4a51ce" method="DELETE">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="FAULT">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>404 500 409</con:status>
+					<con:params/>
+					<con:element xmlns:per="http://localhost/perguntas/">per:Fault</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200 201</con:status>
+					<con:params/>
+					<con:element xmlns:per="http://localhost/perguntas/">per:Response</con:element>
+				</con:representation>
+				<con:representation type="REQUEST">
+					<con:mediaType>application/json</con:mediaType>
+					<con:params/>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>400</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:request name="Request 1" id="e73f22e7-e652-4ae8-880b-692a0e6210cc" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request/>
+					<con:originalUri>http://localhost/perguntas/</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+					<con:parameterOrder/>
+				</con:request>
+			</con:method>
+		</con:resource>
+		<con:resource name="pergunta-tags" path="/api/pergunta-tags" id="46ec6cd5-7e07-44bc-967f-bb4460a51d2f">
+			<con:settings/>
+			<con:parameters/>
+			<con:method name="GET" id="69e48910-ef80-4b94-8968-470920d243fa" method="GET">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200</con:status>
+					<con:params/>
+					<con:element>Response</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:request name="Request 1" id="af407ed1-ee3e-482f-921c-57e550f6fa01" mediaType="application/json">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request/>
+					<con:originalUri>http://localhost/api/pergunta-tags
+					</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:request>
+			</con:method>
+			<con:method name="POST" id="b37e14ae-5855-4de0-9c38-e1e1331416c8" method="POST">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="FAULT">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>500</con:status>
+					<con:params/>
+					<con:element xmlns:per="http://localhost/api/pergunta-tags">per:Fault</con:element>
+				</con:representation>
+				<con:representation type="REQUEST">
+					<con:mediaType>application/json</con:mediaType>
+					<con:params/>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>201</con:status>
+					<con:params/>
+					<con:element xmlns:per="http://localhost/api/pergunta-tags">per:Response</con:element>
+				</con:representation>
+				<con:request name="Request 1" id="f974bc2e-4f4a-468a-997e-f3b5401972a0" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{
+						"perguntaId": 4,
+						"tagId": 1
+						}
+					</con:request>
+					<con:originalUri>http://localhost/api/pergunta-tags
+					</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:request>
+			</con:method>
+		</con:resource>
+		<con:resource name="pergunta-tags-DELETE-GETBYID" path="/api/pergunta-tags/3/1" id="46ec6cd5-7e07-44bc-967f-bb4460a51d2f">
+			<con:settings/>
+			<con:parameters/>
+			<con:method name="DELETE" id="69e48910-ef80-4b94-8968-470920d243fa" method="GET">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200</con:status>
+					<con:params/>
+					<con:element>Response</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="REQUEST">
+					<con:mediaType>application/json</con:mediaType>
+					<con:params/>
+				</con:representation>
+				<con:request name="Request 1" id="af407ed1-ee3e-482f-921c-57e550f6fa01" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request/>
+					<con:originalUri>http://localhost/api/pergunta-tags
+					</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:request>
+			</con:method>
+			<con:method name="GETBYID" id="1fb49d4d-b028-40c6-bccf-d944a760a1ab" method="GET">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200</con:status>
+					<con:params/>
+					<con:element xmlns:ns="http://localhost/api/pergunta-tags/3/1">ns:Response</con:element>
+				</con:representation>
+				<con:request name="Request 1" id="d17c679d-c7c1-4d87-9edb-7d12ded3633a" mediaType="application/json">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://172.31.0.111:8080</con:endpoint>
+					<con:request/>
+					<con:originalUri>http://localhost/api/pergunta-tags/3/1
+					</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:request>
+			</con:method>
+		</con:resource>
+		
+		
+		
+		
+		
+		
+		<con:resource name="cntd-domis" path="/api/cntd-domis" id="6def7bc9-2544-4c9e-8ad1-53e6572a938f">
+			<con:settings/>
+			<con:parameters/>
+			<con:resource name="familia" path="familia" id="cc5edfbb-8d30-4198-b35f-726541cc7adf"><con:settings/><con:parameters/><con:method name="GETALL" id="ca871874-d784-455b-add2-df6d4ffde909" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:fam="http://localhost/api/cntd-domis/familia">fam:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="9dfb46d6-cf72-4783-b0fc-8ab3c093870c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/api/cntd-domis/familia</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="canal" path="canal" id="718cfde8-0a7b-406d-8739-2bcc2097a399"><con:settings/><con:parameters/><con:method name="GETALL" id="92337509-645b-4e6b-a879-4bae59a68343" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="c20e9c26-6a85-4341-ab93-9466ea7dbda9" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/api/cntd-domis/canal</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:method name="GETALL" id="410176b0-2131-4d51-8f76-deed0a30de4a" method="GET">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200</con:status>
+					<con:params/>
+					<con:element>Response</con:element>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>500</con:status>
+					<con:params/>
+					<con:element xmlns:cntd="http://localhost/api/cntd-domis">cntd:Fault</con:element>
+				</con:representation>
+				<con:request name="Request 1" id="0c30f98c-9d60-4b01-bcc9-8b4a90c74409" mediaType="application/json">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request/>
+					<con:originalUri>http://localhost/api/cntd-domis</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:request>
+			</con:method>
+		</con:resource>
+		<con:resource name="domis" path="/api/domis?page=0&amp;size=2&amp;sort=id,asc" id="7813a143-d275-4275-a101-42616f4c4aad">
+			<con:settings/>
+			<con:parameters/>
+			<con:method name="Method 1" id="686b40d3-4561-41ef-9c43-6fe977945b6b" method="GET">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200</con:status>
+					<con:params/>
+					<con:element>Response</con:element>
+				</con:representation>
+				<con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:dom="http://localhost/api/domis">dom:Fault</con:element></con:representation><con:request name="Request 1" id="4279f259-72d2-4f58-8500-e0ca342b6b87" mediaType="application/json">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request/>
+					<con:originalUri>http://localhost/api/domis</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:request>
+			</con:method>
+		</con:resource>
+		<con:resource name="respostas-GET" path="/api/respostas/12" id="1791abb9-34a3-4b24-9b21-a759e1f00125">
+			<con:settings/>
+			<con:parameters/>
+			<con:method name="GET" id="81336c86-b5d0-4b75-a720-720898517b68" method="GET">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200 201</con:status>
+					<con:params/>
+					<con:element>Response</con:element>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>404</con:status>
+					<con:params/>
+					<con:element xmlns:res="http://localhost/api/respostas">res:Fault</con:element>
+				</con:representation>
+				<con:representation type="REQUEST">
+					<con:mediaType>application/json</con:mediaType>
+					<con:params/>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>404</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>404</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>404</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>404</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>404</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>404</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>404</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>404</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>404</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:request name="Request 1" id="dddf1c82-12b9-4adb-a0d8-5c2f1b884212" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{
+						"id" : 9,
+						"perguntaId" :22
+
+						}
+					</con:request>
+					<con:originalUri>http://localhost/api/respostas</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:request>
+			</con:method>
+			<con:method name="DELETE" id="a9ca2a77-0da1-4f52-9fbe-5655d04262cf" method="DELETE">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="REQUEST">
+					<con:mediaType>application/json</con:mediaType>
+					<con:params/>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200</con:status>
+					<con:params/>
+					<con:element xmlns:ns="http://localhost/api/respostas/29/17">ns:Response</con:element>
+				</con:representation>
+				<con:request name="Request 1" id="ea43e51b-eed7-41a6-b858-05959699e283" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request/>
+					<con:originalUri>http://localhost/api/respostas/29/17
+					</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:request>
+			</con:method>
+		</con:resource>		
+		<con:resource name="respostas-TipoLista" path="/api/respostas" id="1791abb9-34a3-4b24-9b21-a759e1f00125">
+			<con:settings/>
+			<con:parameters/>
+			
+			<con:method name="PUT" id="0105536d-6fcd-476c-a79b-fff3f9150b3a" method="PUT">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="REQUEST">
+					<con:mediaType>application/json</con:mediaType>
+					<con:params/>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200 201</con:status>
+					<con:params/>
+					<con:element xmlns:res="http://localhost/api/respostas">res:Response</con:element>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>500</con:status>
+					<con:params/>
+					<con:element xmlns:res="http://localhost/api/respostas">res:Fault</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:request name="Valido-Create" id="1ba66fc0-e5d2-4eb9-99bb-82d54a9b0e0d" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{
+  "perguntaId" : 2,  
+  "perguntaTipoRespostaId" : 1,
+  "respostas": [
+  		{
+  		"inserir" : true,
+  		"dsResposta" : "Tipo Lista 1"
+		},
+   		{
+  		"inserir" : true,
+  		"dsResposta" : "Tipo Lista 2"
+		}
+	]
+}					</con:request>
+					<con:originalUri>http://localhost/api/respostas</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:request>
+				
+			<con:request name="Valido-Update" id="1ba66fc0-e5d2-4eb9-99bb-82d54a9b0e0d" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{
+  "perguntaId" : 2,  
+  "perguntaTipoRespostaId" : 1,
+  "respostas": [
+  		{
+  		"id": 13,
+  		"inserir" : true,
+  		"dsResposta" : "Tipo Lista 1 Alterado"
+		}
+	]
+}					</con:request>
+					<con:originalUri>http://localhost/api/respostas</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:request><con:request name="Valido-Update-apagarResp" id="1ba66fc0-e5d2-4eb9-99bb-82d54a9b0e0d" mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{
+  "perguntaId" : 2,  
+  "perguntaTipoRespostaId" : 1,
+  "respostas": [
+  		{
+  		"id": 13,
+  		"inserir" : false,
+  		"dsResposta" : "Tipo Lista 1 Alterado"
+		}
+	]
+}					</con:request>
+					<con:originalUri>http://localhost/api/respostas</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:request></con:method>
+			<con:method name="GETALL" id="39b7f1d0-489b-4496-a26e-6be58e5717f4" method="GET">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200</con:status>
+					<con:params/>
+					<con:element>Response</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType xsi:nil="true"/>
+					<con:status>0</con:status>
+					<con:params/>
+					<con:element>data</con:element>
+				</con:representation>
+				<con:request name="Request 1" id="a31a683a-8162-49d7-88f4-9858855954b8" mediaType="application/json">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request/>
+					<con:originalUri>http://localhost/api/respostas</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters/>
+				</con:request>
+			</con:method>
+		</con:resource>		
+	<con:resource name="respostas-TipoDadosCorp" path="/api/respostas" id="4d82b10d-ef2a-4582-8303-b8dc2bb5a049"><con:settings/><con:parameters/><con:method name="PUT" id="cec24f4e-a7a6-4378-a07f-eaaf2eb620b8" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>500 409 405</con:status><con:params/><con:element xmlns:dad="http://localhost/api/respostas/dadosCorp">dad:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200 201</con:status><con:params/><con:element xmlns:dad="http://localhost/api/respostas/dadosCorp">dad:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Valido-create" id="15cdab2a-2348-409e-9fa1-231ba515492c" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "perguntaId" : 1,  
+  "perguntaTipoRespostaId" : 3,
+  "perguntaDomiId" : 7,
+  "perguntaInEditavel": "S",  
+  "respostas": [
+  		{
+  		"inserir" : true,
+  		"dsResposta" : "Van Gogh Max Nova label",
+  		"respCorporativas": [
+		   	{
+		   		"cntdDomiId" : 64092
+		   	} ]
+		},
+   		{   		
+   		"inserir" : true,
+  		"dsResposta" : "Van Gogh Max Nova label",
+  		"respCorporativas": [
+		   	{
+		   		"cntdDomiId" : 64150
+		   	} ]
+		},
+   		{   		
+   		"inserir" : false,
+  		"dsResposta" : "Van Gogh Max 3",
+  		"respCorporativas": [
+		   	{
+		   		"cntdDomiId" : 64090
+		   	} ]
+		 }
+	]
+ }</con:request><con:originalUri>http://localhost/api/respostas/dadosCorp</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Valido-update" id="15cdab2a-2348-409e-9fa1-231ba515492c" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "perguntaId" : 2,  
+  "perguntaTipoRespostaId" : 3,
+  "perguntaDomiId" : 7,
+  "perguntaInEditavel": "S",  
+  "respostas": [
+  		{
+  		"id" : 1,
+  		"inserir" : true,
+  		"dsResposta" : "Van Gogh Max Nova label",
+  		"respCorporativas": [
+		   	{
+		   		"cntdDomiId" : 64092 
+		   	} ]
+		},
+   		{    	
+   		"inserir" : true,
+  		"dsResposta" : "Van Gogh Max Nova label nova 2",
+  		"respCorporativas": [
+		   	{
+		   		"cntdDomiId" : 64150
+		   	} ]
+		},
+   		{   		
+   		"inserir" : true,
+  		"dsResposta" : "Van Gogh Max 3",
+  		"respCorporativas": [
+		   	{
+		   		"cntdDomiId" : 64090 
+		   	} ]
+		 }
+	]
+ }</con:request><con:originalUri>http://localhost/api/respostas/dadosCorp</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Valido-update-apagarRespCorp" id="15cdab2a-2348-409e-9fa1-231ba515492c" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "perguntaId" : 1,  
+  "perguntaTipoRespostaId" : 3,
+  "perguntaDomiId" : 7,
+  "perguntaInEditavel": "S",  
+  "respostas": [
+  		{
+  		"id" : 1,
+  		"inserir" : true,
+  		"dsResposta" : "Van Gogh Max Nova label",
+  		"respCorporativas": [
+		   	{
+		   		"cntdDomiId" : 64092
+		   	} ]
+		},
+   		{   		
+   		"id": 2,
+   		"inserir" : false,
+  		"dsResposta" : "Van Gogh Max Nova label nova 2",
+  		"respCorporativas": [
+		   	{
+		   		"cntdDomiId" : 64090
+		   	} ]
+		},
+   		{   		
+   		"id": 3,   			
+   		"inserir" : true,
+  		"dsResposta" : "Van Gogh Max 3",
+  		"respCorporativas": [
+		   	{
+		   		"cntdDomiId" : 64150
+		   	} ]
+		 }
+	]
+ }</con:request><con:originalUri>http://localhost/api/respostas/dadosCorp</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="respostas-TipoInput" path="/api/respostas" id="77decbbb-50f3-4cac-afb7-60a6912d3590"><con:settings/><con:parameters/><con:method name="PUT-CategoriaNumerico" id="76e679df-4835-4cb0-a346-9648cab21f45" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>405 500</con:status><con:params/><con:element xmlns:ran="http://localhost/api/respostas/range">ran:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200 201</con:status><con:params/><con:element xmlns:ran="http://localhost/api/respostas/range">ran:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="ValidoCreate-1" id="33a14b4c-29bd-49ca-b0c9-95504fa807cc" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "perguntaId" : 5,  
+  "perguntaTipoRespostaId" : 2,
+  "respostas": [ {
+  	"dsCategoria" : "NUMERICO",
+	"inserir" : true,
+	"rangeResposta" : {		   	
+   		"rangeInicio" : 1,
+   		"rangeFinal" : 10
+		} 
+	}
+  ]
+}</con:request><con:originalUri>http://localhost/api/respostas/range</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="ValidoUpdate-2-AddRange" id="33a14b4c-29bd-49ca-b0c9-95504fa807cc" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "perguntaId" : 5,  
+  "perguntaTipoRespostaId" : 2,
+  "respostas": [ 
+	{
+  	"dsCategoria" : "NUMERICO",
+	"inserir" : true,
+	"rangeResposta" : {		   	
+   		"rangeInicio" : 11,
+   		"rangeFinal" : 20
+		} 
+	}
+  ]
+}</con:request><con:originalUri>http://localhost/api/respostas/range</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="ValidoUpdate-3-RangeInvalido" id="33a14b4c-29bd-49ca-b0c9-95504fa807cc" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "perguntaId" : 2,  
+  "perguntaTipoRespostaId" : 2,
+  "respostas": [ {
+  	"id" : 9,
+  	"dsCategoria" : "NUMERICO",
+	"inserir" : true,
+	"rangeResposta" : {		   	
+   		"rangeInicio" : 1,
+   		"rangeFinal" : 10
+		} 
+	},
+	{
+	"id" : 9,
+  	"dsCategoria" : "NUMERICO",
+	"inserir" : true,
+	"rangeResposta" : {		   	
+   		"rangeInicio" : 11,
+   		"rangeFinal" : 20
+		} 
+	},
+		{	
+  	"dsCategoria" : "NUMERICO",
+	"inserir" : true,
+	"rangeResposta" : {		   	
+   		"rangeInicio" : 1,
+   		"rangeFinal" : 20
+		} 
+	}
+  ]
+}</con:request><con:originalUri>http://localhost/api/respostas/range</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="ValidoUpdate-apagarRange" id="33a14b4c-29bd-49ca-b0c9-95504fa807cc" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "perguntaId" : 3,  
+  "perguntaTipoRespostaId" : 2,
+  "respostas": [ 
+	{
+	"id" : 16,
+  	"dsCategoria" : "NUMERICO",
+	"inserir" : false,
+	"rangeResposta" : {		   	
+   		"rangeInicio" : 11,
+   		"rangeFinal" : 20
+		} 
+	}
+  ]
+}</con:request><con:originalUri>http://localhost/api/respostas/range</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="PUT-CategoriaAlphaNumericoEspecifico" id="06e77eab-baf1-4c7b-8743-eb7fa6b3b8fa" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:ran="http://localhost/api/respostas/range">ran:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>201 200</con:status><con:params/><con:element xmlns:ran="http://localhost/api/respostas/range">ran:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="ValidoCreateTipoInputAlphaNumericoEspec" id="2523a76c-7b94-49f2-afe6-cbaffa94f8eb" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "perguntaId" : 3,  
+  "perguntaTipoRespostaId" : 2,
+  "respostas": [ {
+  	"dsCategoria":"ALPHANUMERICO_ESPECIFICO",
+	"inserir" : true,
+	"dsResposta" : "Campo digitado pelo usuario"
+  }
+  ]
+}					</con:request><con:originalUri>http://localhost/api/respostas/range</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="ValidoUpdateTipoInputAlphaNumericoEspec" id="2523a76c-7b94-49f2-afe6-cbaffa94f8eb" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "perguntaId" : 4,  
+  "perguntaTipoRespostaId" : 2,
+  "respostas": [ {
+  	"id": 18,
+  	"dsCategoria":"ALPHANUMERICO_ESPECIFICO",
+	"inserir" : true,
+	"dsResposta" : "Campo digitado pelo usuario atualizado 5"
+  }
+  ]
+}</con:request><con:originalUri>http://localhost/api/respostas/range</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="ValidoUpdateDeleteTipoInputAlphaNumericoEspec" id="2523a76c-7b94-49f2-afe6-cbaffa94f8eb" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "perguntaId" : 4,  
+  "perguntaTipoRespostaId" : 2,
+  "respostas": [ {
+  	"id": 18,
+  	"dsCategoria":"ALPHANUMERICO_ESPECIFICO",
+	"inserir" : false,
+	"dsResposta" : "Campo digitado pelo usuario atualizado 5"
+  }
+  ]
+}</con:request><con:originalUri>http://localhost/api/respostas/range</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="PUT-CategoriaAlphaNumericoTodos" id="06e77eab-baf1-4c7b-8743-eb7fa6b3b8fa" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:ran="http://localhost/api/respostas/range">ran:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>201 200</con:status><con:params/><con:element xmlns:ran="http://localhost/api/respostas/range">ran:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="ValidoCreate-TipoInputAlphaNumericoTodos" id="007d1aa3-a4bc-4b65-9aad-78afab1fc3a2" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>	{
+	  "perguntaId" : 4,  
+	  "perguntaTipoRespostaId" : 2,
+	  "respostas": [ {
+	  	"dsCategoria":"ALPHANUMERICO_TODOS",
+		"inserir" : true
+	  }
+	  ]
+	}					</con:request><con:originalUri>http://localhost/api/respostas/range</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="ValidoUpdateDelete-TipoInputAlphaNumericoTodos" id="007d1aa3-a4bc-4b65-9aad-78afab1fc3a2" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "perguntaId" : 5,  
+  "perguntaTipoRespostaId" : 2,
+  "respostas": [ {
+  	"id" : 19,
+  	"dsCategoria":"ALPHANUMERICO_TODOS",
+	"inserir" : false
+  }
+  ]
+}	</con:request><con:originalUri>http://localhost/api/respostas/range</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="arvore-decisao" path="/api/arvore-decisao" id="d00db885-0cc0-40fc-8bcd-b6fab17078f2"><con:settings/><con:parameters/><con:method name="PUT" id="e4ac242c-6495-4b21-b9bb-2770de219dff" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:arv="http://localhost/api/arvore-decisao">arv:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>201 200</con:status><con:params/><con:element xmlns:arv="http://localhost/api/arvore-decisao">arv:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Valido-create" id="e0a4ff8e-2540-4949-bb29-39defbd754a9" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "dsArvoreDecisao" : "Ds teste 6",  
+  "qtProdutos" : 4,
+  "qtPlanos" : 5,
+  "cdSituArvore": "A",  
+  "arvoreFamilias": [
+  		{
+  		"inserir" : true,
+  		"cntdDomiId" : 50388  	
+		}
+	],
+  "arvoreCanais": [
+  		{
+  		"inserir" : true,
+  		"cntdDomiId" : 27127  	
+		}
+	]	
+ }</con:request><con:originalUri>http://localhost/api/arvore-decisao</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request><con:request name="Valido-updateMaster" id="e0a4ff8e-2540-4949-bb29-39defbd754a9" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "id": 1,
+  "dsArvoreDecisao" : "Ds teste atualizado",  
+  "qtProdutos" : 10,
+  "qtPlanos" : 15,
+  "cdSituArvore": "A",  
+  "arvoreFamilias": [
+  		{
+  		"inserir" : true,
+  		"cntdDomiId" : 50388  	
+		}
+	],
+  "arvoreCanais": [
+  		{
+  		"inserir" : true,
+  		"cntdDomiId" : 27127  	
+		}
+	]	
+ }</con:request><con:originalUri>http://localhost/api/arvore-decisao</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request><con:request name="Valido-updateListaFamilia" id="e0a4ff8e-2540-4949-bb29-39defbd754a9" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "id": 2,
+  "dsArvoreDecisao" : "Ds teste atualizado2",  
+  "qtProdutos" : 10,
+  "qtPlanos" : 15,
+  "cdSituArvore": "A",  
+  "arvoreFamilias": [
+  		{
+  		"inserir" : true,
+  		"cntdDomiId" : 50388  	
+		}
+	],
+  "arvoreCanais": [
+  		{
+  		"inserir" : true,
+  		"cntdDomiId" : 27127  	
+		}
+	]	
+ }</con:request><con:originalUri>http://localhost/api/arvore-decisao</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request><con:request name="Valido-updateValidateListaInserirFalse" id="e0a4ff8e-2540-4949-bb29-39defbd754a9" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "id": 5,
+  "dsArvoreDecisao" : "Ds teste atualizado 6",  
+  "qtProdutos" : 10,
+  "qtPlanos" : 15,
+  "cdSituArvore": "A",  
+  "arvoreFamilias": [
+  		{
+  		"inserir" : false,
+  		"cntdDomiId" : 50388  	
+		}
+	],
+  "arvoreCanais": [
+  		{
+  		"inserir" : false,
+  		"cntdDomiId" : 27127  	
+		}
+	]	
+ }</con:request><con:originalUri>http://localhost/api/arvore-decisao</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request><con:request name="Valido-create-ValidacaoListaVazia" id="e0a4ff8e-2540-4949-bb29-39defbd754a9" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "dsArvoreDecisao" : "Ds teste 5",  
+  "qtProdutos" : 4,
+  "qtPlanos" : 5,
+  "cdSituArvore": "A"
+ }</con:request><con:originalUri>http://localhost/api/arvore-decisao</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request><con:request name="Valido-updateListaFamiliaListaVazia" id="e0a4ff8e-2540-4949-bb29-39defbd754a9" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "id": 2,
+  "dsArvoreDecisao" : "Ds teste atualizado",  
+  "qtProdutos" : 10,
+  "qtPlanos" : 15,
+  "cdSituArvore": "A",  
+ 
+  "arvoreCanais": [
+  		{
+  		"inserir" : true,
+  		"cntdDomiId" : 27127  	
+		}
+	]	
+ }</con:request><con:originalUri>http://localhost/api/arvore-decisao</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request><con:request name="Valido-updateValidacaoListaDelete" id="e0a4ff8e-2540-4949-bb29-39defbd754a9" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "id": 2,
+  "dsArvoreDecisao" : "Ds teste atualizado4",  
+  "qtProdutos" : 10,
+  "qtPlanos" : 15,
+  "cdSituArvore": "A",  
+  "arvoreFamilias": [
+  		{
+  		"inserir" : false,
+  		"cntdDomiId" : 50388  	
+		}
+	],
+  "arvoreCanais": [
+  		{
+  		"inserir" : false,
+  		"cntdDomiId" : 27127  	
+		}
+	]	
+ }</con:request><con:originalUri>http://localhost/api/arvore-decisao</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="GET" id="0429b986-ce87-4128-8aa4-4b50dc715db1" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="GETALL" id="fb7c1443-e09a-432a-95af-0221860cf394" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/api/arvore-decisao</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource><con:resource name="arvore-decisao-DELETE-GET" path="/api/arvore-decisao/26" id="d00db885-0cc0-40fc-8bcd-b6fab17078f2"><con:settings/><con:parameters/><con:method name="DELETE" id="8a7d49d5-0be0-407b-b007-88a0affe53c5" method="DELETE"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://localhost/api/arvore-decisao/23">ns:Response</con:element></con:representation><con:request name="DELETE" id="b46d7b86-851d-42f8-8578-442382014f54" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/api/arvore-decisao/23</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="GETBYID" id="c5d355ca-8876-4de4-bd9f-1000f21f1a55" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://localhost/api/arvore-decisao/23">ns:Response</con:element></con:representation><con:request name="GETBYID" id="53573d67-89c6-49e7-8cdc-b64d826fab8c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/api/arvore-decisao/23</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="prods" path="/api/prods" id="b99915f2-26d7-45f5-8093-984accb403ac"><con:settings/><con:parameters/><con:method name="GETALL" id="f59d250e-dfcd-4d94-951e-2a60639d289d" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" id="0b57c575-40f6-4dd5-b0c6-704a3a2a66c7" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/api/prods</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="produto-arvores" path="/api//produto-arvores" id="b7f4ef59-1ae5-49a4-8d16-e6bca6a2a28c"><con:settings/><con:parameters/><con:method name="GETALL" id="81bc81fd-e7a8-440e-8cea-c72cfefb78b3" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" id="3932d505-22b4-4f9d-b16e-3981231c3c9a" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/api//produto-arvores</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="PUT" id="4f6fe766-b8a1-4007-b2b9-990976fb7860" method="PUT"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="validoCreate" id="21565a6e-b1ba-4320-8e96-657f8ba6401a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "prodId": "57",
+  "subpId": "1106",	
+  "inProdutoSemOferta": "S",
+  "cdSituProdArvore": "A",
+  "perguntaObgs": [
+  		{
+  		"inserir" : true,
+  		"perguntaId" : 1  	
+		}
+	]
+ }</con:request><con:originalUri>http://localhost/api//produto-arvores</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="no-arvores" path="/api//no-arvores" id="6b1931b6-991a-4866-bdfe-fc1e74b4cb3b"><con:settings/><con:parameters/><con:resource name="arvore-decisao-id" path="arvore-decisao-id/1" id="89060d64-3043-476f-b589-b9816f33884b"><con:settings/><con:parameters/><con:method name="Method 1" id="1ebb0d13-c771-49da-9918-e8ef331d2205" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:request name="GETBYArvoreDecisaoID" id="fa0d74cb-bce9-4c4e-a933-90340faa33bc" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/api//no-arvores/arvore-decisao-id/1</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:method name="PUT" id="14182ee3-17b5-4111-a42e-4fd01a5ade8c" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>201</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="01-TipoPerguntaQualSegmento" id="08d09de6-e9fe-4c20-b28e-85015a614e30" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "noId" : null,  
+  "noPaiId" : null,
+  "arvoreDecisaoId": 1,
+  "cdTipoNo" : "PERG",
+  "perguntaId" : 41
+}</con:request><con:originalUri>http://localhost/api//no-arvores</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="02-TipoPerguntaQualIdadeSegurado" id="08d09de6-e9fe-4c20-b28e-85015a614e30" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "noId" : null,  
+  "noPaiId" : 2,
+  "arvoreDecisaoId": 1,
+  "cdTipoNo" : "PERG",
+  "perguntaId" : 52
+}</con:request><con:originalUri>http://localhost/api//no-arvores</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="03-TipoProdutoSemOferta" id="08d09de6-e9fe-4c20-b28e-85015a614e30" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "noId" : null,  
+  "noPaiId" : 6,
+  "arvoreDecisaoId": 1,
+  "cdTipoNo" : "PROD",
+  "produtoArvore" : {		   	
+	"prodId" : "99",
+	"subpId" : "9999",
+	"inProdutoSemOferta" : "S"
+   },
+   "mensagemProdutos": [ 
+	{
+  	"id" : 1,
+	"inserir" : true
+	},
+		{
+  	"id" : 2,
+	"inserir" : true
+	}
+
+  ]   
+}</con:request><con:originalUri>http://localhost/api//no-arvores</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="0301-TipoProdutoSemOferta-DeleteMensagem" id="08d09de6-e9fe-4c20-b28e-85015a614e30" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "noId" : 10,  
+  "noPaiId" : 6,
+  "arvoreDecisaoId": 1,
+  "cdTipoNo" : "PROD",
+  "produtoArvore" : {		   	
+	"prodId" : "99",
+	"subpId" : "9999",
+	"inProdutoSemOferta" : "S"
+   },
+   "mensagemProdutos": [ 
+	{
+  	"id" : 1,
+	"inserir" : false
+	}
+  ]   
+}</con:request><con:originalUri>http://localhost/api//no-arvores</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="04-TipoProduto" id="08d09de6-e9fe-4c20-b28e-85015a614e30" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "noId" : null,  
+  "noPaiId" : 6,
+  "arvoreDecisaoId": 1,
+  "cdTipoNo" : "PROD",
+  "produtoArvore" : {		   	
+	"prodId" : "57",
+	"subpId" : "1002",
+	"inProdutoSemOferta" : "N"
+   }  
+}</con:request><con:originalUri>http://localhost/api//no-arvores</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="05-TipoPlano" id="08d09de6-e9fe-4c20-b28e-85015a614e30" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+  "noId" : null,  
+  "noPaiId" : 11,
+  "arvoreDecisaoId": 1,
+  "cdTipoNo" : "PLAN",
+  "prodSegdPlanSegm" : {		   	
+     "planDomiId": 63501,
+     "segdDomiId": 63046,
+     "segmDomiId": 64097,
+     "prodId": "57",
+     "subpId": "1002"
+   }  
+}</con:request><con:originalUri>http://localhost/api//no-arvores</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="GET" id="78f6b6ec-b30f-40da-9971-368c59f8c01f" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="05d6f235-ef68-4979-94c7-fba6f34bb457" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/api//no-arvores</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="arvore-decisao-id" path="/api/no-arvores/arvore-decisao-id/1" id="75ead55f-fcc6-4681-aca0-319c6e399f24"><con:settings/><con:parameters/><con:method name="GETBYArvoreDecisaoId" id="869277ae-37d0-43d4-a1da-3fd663d02b49" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://localhost/api/no-arvores/arvore-decisao-id/1">ns:Response</con:element></con:representation><con:request name="Request 1" id="2f342c76-25eb-452d-9892-1cac222a8b29" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/api/no-arvores/arvore-decisao-id/1</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="canalByfamiliaIds" path="/api/cntd-domis/canal/familiaIds/50474" id="7b772302-bf98-4d7c-be38-77571b2aedcc"><con:settings/><con:parameters/><con:method name="Method 1" id="c45bc7f4-c87b-4f94-8f62-ef351afcb8a8" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:ns="http://localhost/api/cntd-domis/canal/familiaIds/50388">ns:Fault</con:element></con:representation><con:request name="Request 1" id="ed12baed-1258-483b-9ef9-f067a3616acf" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/api/cntd-domis/canal/familiaIds/50388</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="produto-arvoresBycanalIds" path="/api/produto-arvores/canalIds/27121" id="80a8f059-99bc-4176-821b-27d33dac0f6c"><con:settings/><con:parameters/><con:method name="Method 1" id="25715f21-e4ba-450e-a6b9-4de30a8d218a" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>500 404</con:status><con:params/><con:element xmlns:ns="http://localhost/api/produto-arvores/canalIds/27121">ns:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="73bbd663-dd4c-4d50-bad1-e2a0a86c311c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/api/produto-arvores/canalIds/27121</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface>
+	<con:interface xsi:type="con:RestService" id="75a8b4bf-e7d7-4c40-87a9-f35d8e0d71d1" wadlVersion="http://wadl.dev.java.net/2009/02" name="simulador" type="rest" definitionUrl="PLAN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints/></con:interface><con:testSuite id="71005b1a-e359-4680-ac19-ed3355f132dc" name="SimuladorTestSuite">
+		<con:settings/>
+		<con:runType>SEQUENTIAL</con:runType>
+		<con:testCase id="788a8fcd-7663-4082-9dc4-d54b8edbcfd2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TagTest" searchProperties="true">
+			<con:settings/>
+			<con:testStep type="restrequest" name="POST" id="fbcc7fdb-4a41-409e-a49d-c959d64f7c37">
+				<con:settings/>
+				<con:config service="http://localhost:8080" resourcePath="/api/tags" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<con:restRequest name="POST" id="188ffad6-4623-4226-9308-ef9418e704c7" mediaType="application/json" postQueryString="false">
+						<con:settings>
+							<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+						</con:settings>
+						<con:endpoint>http://localhost:8080</con:endpoint>
+						<con:request>{
+							"dsTag" : "Tag Inclusao 1"
+							}
+						</con:request>
+						<con:originalUri>http://localhost/api/tags</con:originalUri>
+						<con:assertion type="Simple Contains" id="77bba287-896d-49a9-837b-d0820b77eb42" name="Contains">
+							<con:configuration>
+								<token>SUCCESS</token>
+								<ignoreCase>false</ignoreCase>
+								<useRegEx>false</useRegEx>
+							</con:configuration>
+						</con:assertion>
+						<con:credentials>
+							<con:authType>No Authorization</con:authType>
+						</con:credentials>
+						<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+						<con:jmsPropertyConfig/>
+						<con:parameters/>
+						<con:parameterOrder/>
+					</con:restRequest>
+				</con:config>
+			</con:testStep>
+			<con:testStep type="transfer" name="Property Transfer - id" id="1a95c7af-5bb0-417e-b389-714ccc0a3753">
+				<con:settings/>
+				<con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+						<con:name>id</con:name>
+						<con:sourceType>Response</con:sourceType>
+						<con:sourceStep>POST</con:sourceStep>
+						<con:sourcePath>$.id</con:sourcePath>
+						<con:targetType>Request</con:targetType>
+						<con:targetStep>PUT</con:targetStep>
+						<con:targetPath>$.id</con:targetPath>
+						<con:type>JSONPATH</con:type>
+						<con:targetTransferType>JSONPATH</con:targetTransferType>
+						<con:upgraded>true</con:upgraded>
+					</con:transfers>
+				</con:config>
+			</con:testStep>
+			<con:testStep type="restrequest" name="PUT" id="a383a18d-cdef-4780-8f7e-46bae09ad1b3">
+				<con:settings/>
+				<con:config service="http://localhost:8080" resourcePath="/api/tags" methodName="PUT" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<con:restRequest name="PUT" id="188ffad6-4623-4226-9308-ef9418e704c7" mediaType="application/json" postQueryString="false">
+						<con:settings>
+							<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+						</con:settings>
+						<con:endpoint>http://localhost:8080</con:endpoint>
+						<con:request>{
+							"id": 1,
+							"dsTag": "Tag Alteracao"
+							}
+						</con:request>
+						<con:originalUri>http://localhost/api/tags</con:originalUri>
+						<con:assertion type="Simple Contains" id="c785633c-5bfa-4949-bb23-04fc536eda17" name="Contains">
+							<con:configuration>
+								<token>SUCCESS</token>
+								<ignoreCase>false</ignoreCase>
+								<useRegEx>false</useRegEx>
+							</con:configuration>
+						</con:assertion>
+						<con:credentials>
+							<con:authType>No Authorization</con:authType>
+						</con:credentials>
+						<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+						<con:jmsPropertyConfig/>
+						<con:parameters/>
+						<con:parameterOrder/>
+					</con:restRequest>
+				</con:config>
+			</con:testStep>
+			<con:properties/>
+		</con:testCase>
+		<con:properties/>
+	</con:testSuite>
+	<con:properties/>
+	<con:wssContainer/>
+	<con:oAuth2ProfileContainer/>
+	<con:sensitiveInformation/>
+</con:soapui-project>

@@ -1,0 +1,24 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "arvoreDecisao",
+            "otherEntityName": "arvoreDecisao",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "dsArvoreDecisao"
+        },
+        {
+            "relationshipName": "cntdDomi",
+            "otherEntityName": "cntdDomi",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "dsCntdDomiLgdo"
+        }
+
+    ],
+    "fields": [],
+    "changelogDate": "20170412180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "TB_ARVORE_CANAL",
+    "pagination": "pager"
+}

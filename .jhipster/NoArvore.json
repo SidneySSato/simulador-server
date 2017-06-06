@@ -1,0 +1,59 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "produtoArvore",
+            "otherEntityName": "produtoArvore",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "cdSituProdArvore"
+        },        
+        {
+            "relationshipName": "arvoreDecisao",
+            "otherEntityName": "arvoreDecisao",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "dsArvoreDecisao"
+        },        
+        {
+            "relationshipName": "prodSegdPlanSegm",
+            "otherEntityName": "prodSegdPlanSegm",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "dtInicVigeSegm"
+        },        
+        {
+            "relationshipName": "resposta",
+            "otherEntityName": "resposta",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "dsResposta"
+        },        
+        {
+            "relationshipName": "noArvoreCopia",
+            "otherEntityName": "noArvoreCopia",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "noArvore"
+        },
+        {
+            "relationshipName": "noArvoreMensagemProduto",
+            "otherEntityName": "noArvoreMensagemProduto",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "noArvore"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "cdTipoNo",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "4"
+        }
+
+    ],
+    "changelogDate": "20170420180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "TB_NO_ARVORE",
+    "pagination": "pager"
+}

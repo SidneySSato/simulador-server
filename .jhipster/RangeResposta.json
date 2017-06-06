@@ -1,0 +1,34 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "resposta",
+            "otherEntityName": "resposta",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "dsResposta"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "rangeInicio",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "rangeFinal",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "operador",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "3"
+        }
+    ],
+    "changelogDate": "20161228180237",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "tb_range_resposta",
+    "pagination": "pager"
+}

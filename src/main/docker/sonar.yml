@@ -1,0 +1,8 @@
+version: '2'
+services:
+    simuladorserver-sonar:
+        container_name: simuladorserver-sonar
+        image: sonarqube:6.1-alpine
+        ports:
+            - 9000:9000
+            - 9092:9092

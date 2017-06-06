@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "pergunta",
+            "otherEntityName": "pergunta",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "dsPergunta"
+        },
+        {
+            "relationshipName": "tag",
+            "otherEntityName": "tag",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "dsTag"
+        }        
+    ],
+    "fields": [],
+    "changelogDate": "20161228180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "tb_pergunta_tag",
+    "pagination": "pager"
+}

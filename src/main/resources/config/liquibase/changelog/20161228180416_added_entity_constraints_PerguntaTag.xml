@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <!--
+        Added the constraints for entity PerguntaTag.
+    -->
+    <changeSet id="20161228180416-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="CD_PERGUNTA"
+                                 baseTableName="TB_PERGUNTA_TAG"
+                                 constraintName="FK_PERGUNTA_TAG_01"
+                                 referencedColumnNames="CD_PERGUNTA"
+                                 referencedTableName="TB_PERGUNTA"/>
+
+        <addForeignKeyConstraint baseColumnNames="CD_TAG"
+                                 baseTableName="TB_PERGUNTA_TAG"
+                                 constraintName="FK_PERGUNTA_TAG_02"
+                                 referencedColumnNames="CD_TAG"
+                                 referencedTableName="TB_TAG"/>
+
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,16 @@
+br\com\jumplabel\simulador\web\rest\CntdDomiResourceIntTest.class
+br\com\jumplabel\simulador\web\rest\MensagemProdutoResourceIntTest.class
+br\com\jumplabel\simulador\web\rest\TipoRespostaResourceIntTest.class
+br\com\jumplabel\simulador\web\rest\RespostaResourceIntTest.class
+br\com\jumplabel\simulador\web\rest\ArvoreDecisaoResourceIntTest.class
+br\com\jumplabel\simulador\web\rest\NoArvoreResourceIntTest.class
+br\com\jumplabel\simulador\web\rest\NoArvoreCopiaResourceIntTest.class
+br\com\jumplabel\simulador\web\rest\CompDomiSegdResourceIntTest.class
+br\com\jumplabel\simulador\web\rest\TestUtil$ZonedDateTimeMatcher.class
+br\com\jumplabel\simulador\web\rest\TestUtil.class
+br\com\jumplabel\simulador\web\rest\RangeRespostaResourceIntTest.class
+br\com\jumplabel\simulador\web\rest\TagResourceIntTest.class
+br\com\jumplabel\simulador\web\rest\PerguntaResourceIntTest.class
+br\com\jumplabel\simulador\web\rest\DomiResourceIntTest.class
+br\com\jumplabel\simulador\web\rest\CompDomiRamoResourceIntTest.class
+br\com\jumplabel\simulador\web\rest\RespostaIsResourceIntTest.class

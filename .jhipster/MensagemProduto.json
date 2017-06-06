@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+    	{
+            "relationshipName": "noArvoreMensagemProduto",
+            "otherEntityName": "noArvoreMensagemProduto",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "mensagemProduto"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "dsMensagem",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "120"
+        }
+    ],
+    "changelogDate": "20170420180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "TB_MENSAGEM_PRODUTO",
+    "pagination": "pager"
+}

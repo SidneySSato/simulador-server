@@ -1,0 +1,11 @@
+Em todos os scripts .sh alterar o usuario e senha conforme o ambiente.
+
+Exemplo:
+User: system
+Passwd: password
+
+sqlplus -s system/password << EOF
+
+Rodar o script que executa todos os scripts de criação e load de dados no schema JL
+
+./99ExecuteAllScripts.sh

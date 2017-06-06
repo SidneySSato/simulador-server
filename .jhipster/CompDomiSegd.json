@@ -1,0 +1,31 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "cntdDomi",
+            "otherEntityName": "cntdDomi",
+            "relationshipType": "one-to-one",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "compDomiSegd"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "nrCnpjSegd",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "cdSusepSegd",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "5"
+        }
+    ],
+    "changelogDate": "20161228180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "TB_COMP_DOMI_SEGD",
+    "pagination": "pager"
+}

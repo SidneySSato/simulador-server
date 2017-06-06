@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    
+    <!-- para gerar o sql, deve ser feito um replace do  classpath para o caminho absoluto dos arquivos
+    Realizar o replace de:
+    /home/kleber/app/java-env/jhipster/workspace2/simulador/simulador-server/src/main/resources/config/liquibase/changelog/
+    para
+    classpath:config/liquibase/changelog/
+    executar o ./mvnw liquibase:updateSQL e sera gerado o arquvio target/liquidbase/-->
+    <include file="classpath:config/liquibase/changelog/20161228175642_added_entity_Pergunta.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161228180237_added_entity_Resposta.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161228180416_added_entity_Tag.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161228180237_added_entity_RangeResposta.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161228180416_added_entity_TipoResposta.xml" relativeToChangelogFile="false"/>    
+    <include file="classpath:config/liquibase/changelog/20161228180416_added_entity_PerguntaTag.xml" relativeToChangelogFile="false"/>
+    
+    <include file="classpath:config/liquibase/changelog/20161228180237_added_entity_RespCorporativa.xml" relativeToChangelogFile="false"/>    
+    <include file="classpath:config/liquibase/changelog/20161228180416_added_entity_Domi.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161228180416_added_entity_CntdDomi.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161228180416_added_entity_CompDomiSegd.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161228180416_added_entity_CompDomiRamo.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161228180416_added_entity_RespostaIs.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170412180416_added_entity_ArvoreDecisao.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170412180416_added_entity_ArvoreCanal.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170412180416_added_entity_ArvoreFamilia.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170416180416_added_entity_CnalProdSegd.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170416180416_added_entity_ProdSegd.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170416180416_added_entity_ProdSegdPlan.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170416180416_added_entity_ProdSegdPlanIs.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170416180416_added_entity_ProdSegdPlanSegm.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170416180416_added_entity_Prod.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170416180416_added_entity_ProdSegdPerg.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170420180416_added_entity_MensagemProduto.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170420180416_added_entity_NoArvoreMensagemProduto.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170420180416_added_entity_RespostaIs.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170420180416_added_entity_ProdutoArvore.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170420180416_added_entity_PerguntaObg.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170420180416_added_entity_NoArvore.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170420180416_added_entity_NoArvoreCopia.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="classpath:config/liquibase/changelog/20161228175642_added_entity_constraints_Pergunta.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161228180237_added_entity_constraints_Resposta.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161228180237_added_entity_constraints_RangeResposta.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161228180416_added_entity_constraints_PerguntaTag.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161228180237_added_entity_constraints_RespCorporativa.xml" relativeToChangelogFile="false"/>    
+    <include file="classpath:config/liquibase/changelog/20161228180416_added_entity_constraints_CntdDomi.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161228180416_added_entity_constraints_RespostaIs.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170412180416_added_entity_constraints_ArvoreCanal.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170412180416_added_entity_constraints_ArvoreFamilia.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170416180416_added_entity_constraints_CnalProdSegd.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170416180416_added_entity_constraints_ProdSegd.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170416180416_added_entity_constraints_ProdSegdPlan.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170416180416_added_entity_constraints_ProdSegdPlanIs.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170416180416_added_entity_constraints_ProdSegdPlanSegm.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170416180416_added_entity_constraints_ProdSegdPerg.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170420180416_added_entity_constraints_NoArvoreMensagemProduto.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170420180416_added_entity_constraints_RespostaIs.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170420180416_added_entity_constraints_PerguntaObg.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170420180416_added_entity_constraints_NoArvore.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+</databaseChangeLog>

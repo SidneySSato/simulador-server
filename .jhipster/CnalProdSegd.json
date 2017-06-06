@@ -1,0 +1,26 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "prodSegd",
+            "otherEntityName": "prodSegd",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "dtIniciVigeCnalVend",
+            "fieldType": "ZonedDateTime"
+        },
+                {
+            "fieldName": "dtFimVigeCnalVend",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20170416180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "TB_CNAL_PROD_SEGD",
+    "pagination": "pager"
+}

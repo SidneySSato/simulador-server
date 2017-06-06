@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "prodSegdPlan",
+            "otherEntityName": "prodSegdPlan",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "dtInicVigePlan"
+        }
+
+    ],
+    "fields": [
+        {
+            "fieldName": "dtInicVigeSegm",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dtFimVigeSegm",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20170416180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "TB_PROD_SEGD_PLAN_SEGM",
+    "pagination": "pager"
+}

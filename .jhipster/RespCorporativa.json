@@ -1,0 +1,26 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "resposta",
+            "otherEntityName": "resposta",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "respCorporativa"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "dsLabel",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "50"
+        }
+    ],
+    "changelogDate": "20161228180237",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "tb_resp_corporativa",
+    "pagination": "pager"
+}

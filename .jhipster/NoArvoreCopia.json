@@ -1,0 +1,31 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "noArvore",
+            "otherEntityName": "noArvore",
+            "relationshipType": "one-to-one",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "noArvoreCopia"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "dsNoArvoreCopia",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "60"
+        },
+        {
+            "fieldName": "dtCopia",
+            "fieldType": "ZonedDateTime"
+        }        
+    ],
+    "changelogDate": "20170420180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "TB_NO_ARVORE_COPIA",
+    "pagination": "pager"
+}

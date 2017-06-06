@@ -1,0 +1,44 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "prod",
+            "otherEntityName": "prod",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "dsProdSubpVc"
+        },
+        {
+            "relationshipName": "prodSegdPlan",
+            "otherEntityName": "prodSegdPlan",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "prodSegd"
+        },
+        {
+            "relationshipName": "prodSegdPerg",
+            "otherEntityName": "prodSegdPerg",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "prodSegd"
+        },
+        {
+            "relationshipName": "cnalProdSegd",
+            "otherEntityName": "cnalProdSegd",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "prodSegd"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "dtInicVigeProdSegd",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dtFimVigeProdSegd",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20170416180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "TB_PROD_SEGD",
+    "pagination": "pager"
+}

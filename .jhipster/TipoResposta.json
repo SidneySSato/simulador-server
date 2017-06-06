@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "pergunta",
+            "otherEntityName": "pergunta",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "tipoResposta"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "dsTipoResposta",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "50"
+        }
+    ],
+    "changelogDate": "20161228180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "tb_tipo_resposta",
+    "pagination": "pager"
+}

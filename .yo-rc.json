@@ -1,0 +1,33 @@
+{
+  "generator-jhipster": {
+    "jhipsterVersion": "3.12.1",
+    "baseName": "simuladorServer",
+    "packageName": "br.com.jumplabel.simulador",
+    "packageFolder": "br/com/jumplabel/simulador",
+    "serverPort": "8080",
+    "authenticationType": "session",
+    "hibernateCache": "no",
+    "clusteredHttpSession": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "enableSocialSignIn": false,
+    "rememberMeKey": "10aa93a2e327145f38005907402ec05eff56163a",
+    "enableTranslation": true,
+    "applicationType": "monolith",
+    "clientFramework": "angular2",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "skipClient": true,
+    "nativeLanguage": "pt-br",
+    "languages": [
+      "pt-br"
+    ],
+    "clientPackageManager": "npm",
+    "serviceDiscoveryType": false
+  }
+}

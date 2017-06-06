@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "produtoArvore",
+            "otherEntityName": "produtoArvore",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "cdSituProdArvore"
+        },
+        {
+            "relationshipName": "pergunta",
+            "otherEntityName": "pergunta",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "dsPergunta"
+        }        
+    ],
+    "fields": [],
+    "changelogDate": "20170420180416",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "TB_PERGUNTA_OBG",
+    "pagination": "pager"
+}
